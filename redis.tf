@@ -1,6 +1,6 @@
 # Configure the Docker provider
 variable "docker_host" {
-  default = "192.168.99.100"
+  default = "127.0.0.1"
 }
 
 provider "docker" {
@@ -18,7 +18,7 @@ resource "docker_container" "redis" {
     	external = "700${count.index}"
     }
     ports {
-    	internal = "1700${count.index}"
+    	internal = "1700${count.index}"    
     	external = "1700${count.index}"
     }
     volumes {
