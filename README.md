@@ -1,3 +1,3 @@
-* Requirements
+# Requirements
  - docker
- - terraform
+ - [terraform](https://www.terraform.io/downloads.html)
