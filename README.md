@@ -3,10 +3,13 @@
  - [terraform](https://www.terraform.io/downloads.html)
 
 # Run
+Clone the repository and run the command from the repo root.
 
 ```
 terraform plan && terraform apply
 ```
+
+After running this command a docker cluster will be up and running on ports 7000-7005, three masters and three slaves.
 
 ## Configure docker host ip
 Solves problem with terraform:
