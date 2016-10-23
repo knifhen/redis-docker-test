@@ -38,9 +38,10 @@ resource "docker_container" "setup" {
 
 resource "docker_image" "redis" {
     name = "redis:alpine"
+    keep_locally = true
 }
 
 resource "docker_image" "ruby" {
-    name = "setup"
+    name = "knifhen/redis-cluster-setup"
     keep_locally = true
 }
